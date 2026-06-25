@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurelia Shoes</title>
+
+    <link rel="stylesheet" href="./src/output.css" />
+</head>
+<body>
+  <!--Header, Nav Bar, Login-->
+  <header class=" border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 ">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
+        <div class="text-lg font-bold tracking-tight">Aurelia Shoes</div>
+
+        <nav class="hidden sm:flex items-center gap-6 text-sm">
+          <a href="index.html" class="hover:underline">Home</a>
+          <a href="products.html" class="hover:underline">Products</a>
+          <a href="adidas.html" class="hover:underline">Adidas</a>
+          <a href="nike.html" class="hover:underline">Nike</a>
+          <a href="asics.html" class="hover:underline">ASICS</a>
+          <a href="about-us.html" class="hover:underline">About us</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <button class="bg-blue-900 text-white px-3 py-1 rounded-full text-sm font-medium hover:bg-blue-800 transition">
+            Login
+          </button>
+
+          <label for="menu-toggle" class="sm:hidden text-2xl cursor-pointer">
+            ☰
+          </label>
+        </div>
+      </div>
+
+             <!-- Hidden checkbox (controls menu) -->
+      <input id="menu-toggle" type="checkbox" class="hidden peer" />
+
+      <!-- Mobile Nav -->
+    <!-- Mobile Navigation -->
+    <nav class="hidden peer-checked:block sm:hidden bg-white border-t border-gray-200">
+
+        <a href="index.html" class="block px-4 py-3 hover:bg-gray-100">
+            Home
+        </a>
+
+        <a href="products.html" class="block px-4 py-3 hover:bg-gray-100">
+            Products
+        </a>
+
+        <a href="adidas.html" class="block px-4 py-3 hover:bg-gray-100">
+            Adidas
+        </a>
+
+        <a href="nike.html" class="block px-4 py-3 hover:bg-gray-100">
+            Nike
+        </a>
+
+        <a href="asics.html" class="block px-4 py-3 hover:bg-gray-100">
+            ASICS
+        </a>
+
+        <a href="about-us.html" class="block px-4 py-3 hover:bg-gray-100">
+            About Us
+        </a>
+
+    </nav>
+  </header>
+
+  <section id="products" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">
+            Shop the Hot Collection
+          </h2>
+          <p class="mt-3 text-gray-500">
+            Find the perfect pair for every move.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Card 1 -->
+          <div
+            class="group rounded-2xl bg-white border border-gray-200 overflow-hidden hover:shadow-xl transition duration-300"
+          >
+            <div
+              class="relative aspect-square bg-gray-100 flex items-center justify-center"
+            >
+              <span
+                class="absolute top-3 left-3 z-10 bg-red-500 text-white text-[10px] font-semibold uppercase tracking-wide px-2 py-1 rounded-full"
+                >Hot</span
+              >
+              <img
+                src="images/361 Low-Top Running Shoes.png"
+                alt="361 Low-Top Running Shoes"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900">
+                361° Low-Top Running Shoes
+              </h3>
+              <p class="mt-1 text-red-500 font-bold">$129</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="group rounded-2xl bg-white border border-gray-200 overflow-hidden hover:shadow-xl transition duration-300"
+          >
+            <div
+              class="relative aspect-square bg-gray-100 flex items-center justify-center"
+            >
+              <span
+                class="absolute top-3 left-3 z-10 bg-red-500 text-white text-[10px] font-semibold uppercase tracking-wide px-2 py-1 rounded-full"
+                >Hot</span
+              >
+              <img
+                src="images/Nike-A'One OG Pearl .png"
+                alt="ASICS Women's Gel-Cumulus 26 Running Shoes"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900">Nike-A'One OG Pearl</h3>
+              <p class="mt-1 text-red-500 font-bold">$149</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="group rounded-2xl bg-white border border-gray-200 overflow-hidden hover:shadow-xl transition duration-300"
+          >
+            <div
+              class="relative aspect-square bg-gray-100 flex items-center justify-center"
+            >
+              <span
+                class="absolute top-3 left-3 z-10 bg-red-500 text-white text-[10px] font-semibold uppercase tracking-wide px-2 py-1 rounded-full"
+                >Hot</span
+              >
+              <img src="images/New Balance.png" alt="New Balance" />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900">New Balance</h3>
+              <p class="mt-1 text-red-500 font-bold">$99</p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="group rounded-2xl bg-white border border-gray-200 overflow-hidden hover:shadow-xl transition duration-300"
+          >
+            <div
+              class="relative aspect-square bg-gray-100 flex items-center justify-center"
+            >
+              <span
+                class="absolute top-3 left-3 z-10 bg-red-500 text-white text-[10px] font-semibold uppercase tracking-wide px-2 py-1 rounded-full"
+                >Hot</span
+              >
+              <img src="images/Adidas-Runfalcon 5 JB.png" alt="Adidas" />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900">Adidas-Runfalcon 5 JB</h3>
+              <p class="mt-1 text-red-500 font-bold">$119</p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            class="group rounded-2xl bg-white border border-gray-200 overflow-hidden hover:shadow-xl transition duration-300"
+          >
+            <div
+              class="relative aspect-square bg-gray-100 flex items-center justify-center"
+            >
+              <span
+                class="absolute top-3 left-3 z-10 bg-red-500 text-white text-[10px] font-semibold uppercase tracking-wide px-2 py-1 rounded-full"
+                >Hot</span
+              >
+              <img
+                src="images/Adidas-Zamba.png"
+                alt="Zamba"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900">Adidas-Zamba X</h3>
+              <p class="mt-1 text-red-500 font-bold">$159</p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div
+            class="group rounded-2xl bg-white border border-gray-200 overflow-hidden hover:shadow-xl transition duration-300"
+          >
+            <div
+              class="relative aspect-square bg-gray-100 flex items-center justify-center"
+            >
+              <span
+                class="absolute top-3 left-3 z-10 bg-red-500 text-white text-[10px] font-semibold uppercase tracking-wide px-2 py-1 rounded-full"
+                >Hot</span
+              >
+              <img src="images/ASICS-FF Blast.png" alt="Running shoes" />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900">ASICS-FF Blast</h3>
+              <p class="mt-1 text-red-500 font-bold">$109</p>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div
+            class="group rounded-2xl bg-white border border-gray-200 overflow-hidden hover:shadow-xl transition duration-300"
+          >
+            <div
+              class="relative aspect-square bg-gray-100 flex items-center justify-center"
+            >
+              <span
+                class="absolute top-3 left-3 z-10 bg-red-500 text-white text-[10px] font-semibold uppercase tracking-wide px-2 py-1 rounded-full"
+                >Hot</span
+              >
+              <img
+                src="images/Nike-Ja Morant.png"
+                alt="Basketball"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900">Nike-Ja Morant</h3>
+              <p class="mt-1 text-red-500 font-bold">$139</p>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div
+            class="group rounded-2xl bg-white border border-gray-200 overflow-hidden hover:shadow-xl transition duration-300"
+          >
+            <div
+              class="relative aspect-square bg-gray-100 flex items-center justify-center"
+            >
+              <span
+                class="absolute top-3 left-3 z-10 bg-red-500 text-white text-[10px] font-semibold uppercase tracking-wide px-2 py-1 rounded-full"
+                >Hot</span
+              >
+              <img src="images/Onitsuka Tiger Tokuten.png" alt="Onitsuka" />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900">
+                Onitsuka Tiger Tokutgen
+              </h3>
+              <p class="mt-1 text-red-500 font-bold">$89</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+</body>
+</html>

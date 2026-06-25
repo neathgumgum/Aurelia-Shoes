@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurelia Shoes</title>
+    <link rel="stylesheet" href="./src/output.css" />
+</head>
+<body>
+    <!--Header, Nav Bar, Login-->
+  <header
+      class="border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900"
+    >
+      <div
+        class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between"
+      >
+        <div class="text-lg font-bold tracking-tight">Aurelia Shoes</div>
+
+        <nav class="hidden sm:flex items-center gap-6 text-sm">
+          <a href="index.html" class="hover:underline">Home</a>
+          <a href="products.html" class="hover:underline">Products</a>
+          <a href="adidas.html" class="hover:underline">Adidas</a>
+          <a href="nike.html" class="hover:underline">Nike</a>
+          <a href="asics.html" class="hover:underline">ASICS</a>
+          <a href="about-us.html" class="hover:underline">About us</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <button
+            class="bg-blue-900 text-white px-3 py-1 rounded-full text-sm font-medium hover:bg-blue-800 transition"
+          >
+            Login
+          </button>
+
+          <label for="menu-toggle" class="sm:hidden text-2xl cursor-pointer">
+            ☰
+          </label>
+        </div>
+      </div>
+
+      <!-- Hidden checkbox (controls menu) -->
+      <input id="menu-toggle" type="checkbox" class="hidden peer" />
+
+      <!-- Mobile Nav -->
+      <!-- Mobile Navigation -->
+      <nav class="hidden peer-checked:block sm:hidden bg-white border-t border-gray-200">
+
+          <a href="index.html" class="block px-4 py-3 hover:bg-gray-100">
+              Home
+          </a>
+
+          <a href="products.html" class="block px-4 py-3 hover:bg-gray-100">
+              Products
+          </a>
+
+          <a href="adidas.html" class="block px-4 py-3 hover:bg-gray-100">
+              Adidas
+          </a>
+
+          <a href="nike.html" class="block px-4 py-3 hover:bg-gray-100">
+              Nike
+          </a>
+
+          <a href="asics.html" class="block px-4 py-3 hover:bg-gray-100">
+              ASICS
+          </a>
+
+          <a href="about-us.html" class="block px-4 py-3 hover:bg-gray-100">
+              About Us
+          </a>
+
+      </nav>
+  </header>
+
+    <!--Hero Section-->
+    <section
+      id="home"
+      class="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white flex items-center"
+    >
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-6">
+          <!-- left side -->
+          <div>
+            <p class="text-sm tracking-[0.3em] uppercase text-gray-400 mb-4">
+              Built for speed • Made for you
+            </p>
+
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">
+              <span class="text-white">Every Run</span><br />
+              <span class="text-red-500">Starts Here</span>
+            </h1>
+
+            <p class="mt-6 text-gray-300 text-lg max-w-md">
+              Lightweight and responsive footwear built for runners of all
+              levels.
+            </p>
+
+            <!-- buttons -->
+            <div class="mt-8 flex flex-wrap gap-4">
+              <button
+                class="bg-red-500 hover:bg-red-600 transition px-6 py-3 rounded-full font-semibold"
+              >
+                Shop Now →
+              </button>
+
+              <button
+                class="border border-gray-500 hover:border-white transition px-6 py-3 rounded-full font-semibold"
+              >
+                Explore Collection
+              </button>
+            </div>
+          </div>
+
+          <!-- RIGHT IMAGE -->
+          <div class="relative flex justify-center lg:justify-end">
+            <!-- glow effect -->
+            <div
+              class="absolute w-72 h-72 bg-red-500 blur-3xl opacity-30 rounded-full"
+            ></div>
+
+            <img
+              src="images/shoes-hero.png"
+              alt="Running Shoe"
+              class="relative w-[320px] md:w-[420px] lg:w-[460px] xl:w-[580px] drop-shadow-2xl hover:scale-105 transition duration-500"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

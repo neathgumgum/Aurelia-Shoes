@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurelia Shoes</title>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body>
+  <!--Header, Nav Bar, Login-->
+  <header class=" border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 ">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
+        <div class="text-lg font-bold tracking-tight">Aurelia Shoes</div>
+
+        <nav class="hidden sm:flex items-center gap-6 text-sm">
+          <a href="index.html" class="hover:underline">Home</a>
+          <a href="products.html" class="hover:underline">Products</a>
+          <a href="adidas.html" class="hover:underline">Adidas</a>
+          <a href="nike.html" class="hover:underline">Nike</a>
+          <a href="asics.html" class="hover:underline">ASICS</a>
+          <a href="about-us.html" class="hover:underline">About us</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <button class="bg-blue-900 text-white px-3 py-1 rounded-full text-sm font-medium hover:bg-blue-800 transition">
+            Login
+          </button>
+
+          <label for="menu-toggle" class="sm:hidden text-2xl cursor-pointer">
+            ☰
+          </label>
+        </div>
+      </div>
+
+             <!-- Hidden checkbox (controls menu) -->
+      <input id="menu-toggle" type="checkbox" class="hidden peer" />
+
+      <!-- Mobile Nav -->
+    <!-- Mobile Navigation -->
+    <nav class="hidden peer-checked:block sm:hidden bg-white border-t border-gray-200">
+
+        <a href="index.html" class="block px-4 py-3 hover:bg-gray-100">
+            Home
+        </a>
+
+        <a href="products.html" class="block px-4 py-3 hover:bg-gray-100">
+            Products
+        </a>
+
+        <a href="adidas.html" class="block px-4 py-3 hover:bg-gray-100">
+            Adidas
+        </a>
+
+        <a href="nike.html" class="block px-4 py-3 hover:bg-gray-100">
+            Nike
+        </a>
+
+        <a href="asics.html" class="block px-4 py-3 hover:bg-gray-100">
+            ASICS
+        </a>
+
+        <a href="about-us.html" class="block px-4 py-3 hover:bg-gray-100">
+            About Us
+        </a>
+
+    </nav>      
+  </header>
+
+    <section class="container mx-auto px-6 py-24">
+      <section1>
+        <div>
+          <p
+            class="text-center text-red-500 font-bold uppercase tracking-widest mb-8"
+          >
+            Contact Us
+          </p>
+        </div>
+
+        <div class="space-y-4 text-center">
+          <p class="font-semibold tracking-widest">aureliashoes@gmail.com</p>
+
+          <p class="font-semibold tracking-widest">
+            st.1984, Seksok, Phnom Penh
+          </p>
+
+          <p class="font-semibold tracking-widest">(+855)081-824-313</p>
+        </div>
+      </section1>
+
+      <!-- About Us -->
+      <section2 id="about-us" class="container mx-auto px-6 py-24">
+        <div class="text-center mb-16">
+          <p class="text-red-500 font-bold uppercase tracking-widest">
+            About Us
+          </p>
+          <h2 class="text-5xl font-bold text-gray-900 mt-3">
+            Every Run Starts Here
+          </h2>
+          <p class="text-gray-600 max-w-3xl mx-auto mt-6">
+            At Aurelia Shoes, we create footwear that combines comfort,
+            performance, and style. Whether you're chasing a personal best,
+            exploring new trails, or simply staying active, our shoes are
+            designed to support every step of your journey.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-10">
+          <!-- Card 1 -->
+          <div
+            class="p-6 rounded-2xl shadow-lg hover:-translate-y-2 transition bg-gray-200"
+          >
+            <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
+            <p class="text-gray-600">
+              To empower athletes and everyday movers with innovative footwear
+              that delivers comfort, durability, and confidence.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="p-6 rounded-2xl shadow-lg hover:-translate-y-2 transition bg-gray-200"
+          >
+            <h3 class="text-2xl font-bold mb-4">Our Vision</h3>
+            <p class="text-gray-600">
+              To become a trusted global footwear brand that inspires healthier,
+              more active lifestyles through quality design and performance.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="p-6 rounded-2xl shadow-lg hover:-translate-y-2 transition bg-gray-200"
+          >
+            <h3 class="text-2xl font-bold mb-4">Why Aurelia?</h3>
+            <p class="text-gray-600">
+              We focus on premium materials, lightweight construction, and
+              modern aesthetics to ensure every pair feels as good as it looks.
+            </p>
+          </div>
+        </div>
+      </section2>
+    </section>
+  </body>
+</html>
