@@ -607,6 +607,11 @@
       display: block;
     }
   }
+  .peer-checked\:flex {
+    &:is(:where(.peer):checked ~ *) {
+      display: flex;
+    }
+  }
   .hover\:-translate-y-2 {
     &:hover {
       @media (hover: hover) {
